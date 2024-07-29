@@ -1,18 +1,21 @@
-import React from "react";
+import ButtonInputSearch from "..//ButtonInputSearch/ButtonInputSearch";
+
+import React, { useState } from "react";
 import Search from "antd/es/transfer/search";
 import { Col } from "antd";
+import {
+  UserOutlined,
+  CaretDownOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
+
 import {
   WrapperHeader,
   WrapperTextHeader,
   WrapperHeaderAccount,
   WrapperTextHeaderSmall,
 } from "./style";
-import {
-  UserOutlined,
-  CaretDownOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons";
-import ButtonInputSearch from "..//ButtonInputSearch/ButtonInputSearch";
+
 const HeaderComponent = () => {
   return (
     <div>
@@ -22,18 +25,16 @@ const HeaderComponent = () => {
         </Col>
         <Col span={12}>
           <ButtonInputSearch
-            size="large"
-            textButton = "Tìm kiếm"
+            size="medium"
+            textButton="Tìm kiếm"
             placeholder="Input search text"
-            // onSearch={onSearch}
           />
         </Col>
-        <Col span={6} style={{ display: "flex", gap: "20px" }}>
+        <Col span={6} style={{ display: "flex", gap: "20px", alignItems:"center" }}>
           <WrapperHeaderAccount>
             <UserOutlined style={{ fontSize: "30px" }} />
             <div>
               <WrapperTextHeaderSmall>Đăng nhập/Đăng ký</WrapperTextHeaderSmall>
-
               <div>
                 <WrapperTextHeaderSmall>Tài Khoản</WrapperTextHeaderSmall>
                 <CaretDownOutlined />

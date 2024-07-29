@@ -1,19 +1,37 @@
 import React from "react";
-import { Button, Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
+import InputComponent from "../InputComponent/InputComponent";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 const ButtonInputSearch = (props) => {
-  const { size, placeholder, textButton } = props;
+  const {
+    size,
+    placeholder,
+    textButton,
+    backgroundColorInput = "#fff",
+    backgroundColorButton = "rgb(13,92,182)",
+    colorButton = "#fff",
+    bordered,
+  } = props;
   return (
     <div style={{ display: "flex" }}>
-      <Input
+      <InputComponent
         size={size}
         placeholder={placeholder}
-        bordered={false}
-        style={{ backgroundColor: "#fff", borderRadius: "0" }}
+        style={{ backgroundColor: backgroundColorInput, borderRadius: "0" }}
       />
-      <Button size={size} icon={<SearchOutlined />} style={{ borderRadius: 0 }}>
-        {textButton}
-      </Button>
+
+      <ButtonComponent
+        size={size}
+        icon={<SearchOutlined />}
+        styleButton={{
+          backgroundColor: backgroundColorButton,
+          border: !bordered && "none",
+          color: colorButton,
+          borderRadius: "0",
+        }}
+        textButton={textButton}
+        styleTextButton={{ color: colorButton }}
+      />
     </div>
   );
 };
