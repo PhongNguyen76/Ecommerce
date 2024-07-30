@@ -1,20 +1,16 @@
-import ButtonInputSearch from "..//ButtonInputSearch/ButtonInputSearch";
+import ButtonInputSearch from '..//ButtonInputSearch/ButtonInputSearch';
 
-import React, { useState } from "react";
-import Search from "antd/es/transfer/search";
-import { Col } from "antd";
-import {
-  UserOutlined,
-  CaretDownOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons";
+import React, { useState } from 'react';
+import Search from 'antd/es/transfer/search';
+import { Col } from 'antd';
+import { UserOutlined, CaretDownOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 
 import {
   WrapperHeader,
   WrapperTextHeader,
   WrapperHeaderAccount,
   WrapperTextHeaderSmall,
-} from "./style";
+} from './style';
 
 const HeaderComponent = () => {
   return (
@@ -24,15 +20,11 @@ const HeaderComponent = () => {
           <WrapperTextHeader>TIKI</WrapperTextHeader>
         </Col>
         <Col span={12}>
-          <ButtonInputSearch
-            size="medium"
-            textButton="Tìm kiếm"
-            placeholder="Input search text"
-          />
+          <ButtonInputSearch size="medium" textButton="Tìm kiếm" placeholder="Input search text" />
         </Col>
-        <Col span={6} style={{ display: "flex", gap: "20px", alignItems:"center" }}>
+        <Col span={6} style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
           <WrapperHeaderAccount>
-            <UserOutlined style={{ fontSize: "30px" }} />
+            <UserOutlined style={{ fontSize: '30px' }} />
             <div>
               <WrapperTextHeaderSmall>Đăng nhập/Đăng ký</WrapperTextHeaderSmall>
               <div>
@@ -42,7 +34,7 @@ const HeaderComponent = () => {
             </div>
           </WrapperHeaderAccount>
           <div>
-            <ShoppingCartOutlined style={{ fontSize: "30px", color: "#fff" }} />
+            <ShoppingCartOutlined style={{ fontSize: '30px', color: '#fff' }} />
             <WrapperTextHeaderSmall>Giỏ hàng</WrapperTextHeaderSmall>
           </div>
         </Col>
