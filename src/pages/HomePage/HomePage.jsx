@@ -7,6 +7,7 @@ import slider3 from '@assets/images/slider3.jpg';
 
 import SilderComponent from '@component/SliderComponent/SilderComponent';
 import CardComponent from '@component/CardComponent/CardComponent';
+import NavBarComponent from '../../component/NavBarComponent/NavBarComponent.jsx';
 
 const HomePage = () => {
   const arr = ['TV', 'Tu lanh', 'Lap top'];
@@ -28,6 +29,7 @@ const HomePage = () => {
         <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '2000px' }}>
           <CardComponent />
         </div>
+        <NavBarComponent />
       </div>
     </>
   );
