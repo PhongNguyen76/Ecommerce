@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Checkbox from 'antd/es/checkbox/Checkbox';
 import { Rate } from 'antd';
 import { WrapperLabelText, WrapperTextValue, WrapperContent, WrapperTextPrice } from './style';
+
 const NavBarComponent = () => {
   const onChange = () => {};
   const renderContent = (type, options) => {
@@ -50,15 +51,7 @@ const NavBarComponent = () => {
       <WrapperLabelText>Label</WrapperLabelText>
       <WrapperContent>{renderContent('text', ['Tu lanh', 'TV', 'May Giat'])}</WrapperContent>
 
-      <WrapperContent>
-        {renderContent('checkbox', [
-          { value: 'a', label: 'A' },
-          { value: 'b', label: 'B' },
-        ])}
-      </WrapperContent>
-
-      <WrapperContent>{renderContent('star', [3, 4, 5])}</WrapperContent>
-      <WrapperContent>{renderContent('price', ['duoi 40', 'tren 50.000'])}</WrapperContent>
+     
     </div>
   );
 };

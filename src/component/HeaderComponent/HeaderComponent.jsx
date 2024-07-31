@@ -1,7 +1,6 @@
-import ButtonInputSearch from '..//ButtonInputSearch/ButtonInputSearch';
+import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 
 import React, { useState } from 'react';
-import Search from 'antd/es/transfer/search';
 import { Col } from 'antd';
 import { UserOutlined, CaretDownOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 
