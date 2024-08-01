@@ -1,7 +1,7 @@
 import React from 'react';
 
 import TypeProduct from '@component/TypeProduct/TypeProduct';
-import { WrapperTypeProduct, WrapperButtonMore } from './style.js';
+import { WrapperTypeProduct, WrapperButtonMore,WrapperProducts } from './style.js';
 import slider1 from '@assets/images/slider1.webp';
 import slider3 from '@assets/images/slider3.jpg';
 
@@ -27,14 +27,8 @@ const HomePage = () => {
         style={{ backgroundColor: '#efefef', padding: '0 120px', height: '1000px' }}
       >
         <SilderComponent arrImages={[slider1, slider3]} />
-        <div
-          style={{
-            marginTop: '20px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '20px',
-            flexWrap: 'wrap',
-          }}
+        <WrapperProducts
+      
         >
           <CardComponent />
           <CardComponent />
@@ -43,8 +37,8 @@ const HomePage = () => {
           <CardComponent />
           <CardComponent />
           <CardComponent />
-        </div>
-
+        </WrapperProducts>
+          
         <div
           style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '10px' }}
         >
