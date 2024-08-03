@@ -8,5 +8,4 @@ const ButtonComponent = ({ size, styleButton, styleTextButton, textButton, ...re
     </Button>
   );
 };
-
 export default ButtonComponent;

@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
-import { Row, Col, Pagination } from 'antd';
+import { Row, Col, Pagination, Button } from 'antd';
 
 import CardComponent from '../../component/CardComponent/CardComponent';
 import NavBarComponent from '../../component/NavBarComponent/NavBarComponent';
 import { WrapperProducts, WrapperNavbar } from './style';
+
 const TypeProductPage = () => {
   const onChange = () => {};
   return (

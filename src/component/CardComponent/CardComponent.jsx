@@ -4,10 +4,11 @@ import {
   WrapperReportText,
   WrapperPriceText,
   WrapperPriceDiscountText,
-  WrapperCardStyle
+  WrapperCardStyle,
+  WrapperStyleTextSell,
 } from './style';
-import { StarFilled } from '@ant-design/icons'; 
-import official from  '@assets/images/official.png'
+import { StarFilled } from '@ant-design/icons';
+import official from '@assets/images/official.png';
 
 const CardComponent = () => {
   return (
@@ -18,13 +19,16 @@ const CardComponent = () => {
         body: { padding: '10px' },
       }}
     >
-      <img src={official} style={{width:'68px', height:'14px', position:'absolute', top:'0', left:'0'}}/>
+      <img
+        src={official}
+        style={{ width: '68px', height: '14px', position: 'absolute', top: '0', left: '0' }}
+      />
       <StyledNameProduct>Iphone</StyledNameProduct>
       <WrapperReportText>
         <span style={{ marginRight: '4px' }}>
-          <span>4.96</span> <StarFilled style={{ fontSize: '12px', color: 'yellow' }} />
+          <span>4.96</span> <StarFilled style={{ fontSize: '12px', color: 'rgb(253,216,54' }} />
         </span>
-        <span>|Đã bán 1000+ </span>
+        <WrapperStyleTextSell>|Đã bán 1000+ </WrapperStyleTextSell>
       </WrapperReportText>
       <WrapperPriceText>
         1.000.000
