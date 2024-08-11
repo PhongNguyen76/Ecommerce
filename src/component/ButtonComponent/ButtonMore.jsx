@@ -1,10 +1,10 @@
 import React from 'react';
 import { WrapperButtonMore } from '@pages/HomePage/style.js';
 
-const ButtonMore = ({ textButton }) => {
+const ButtonMore = ({}) => {
   return (
     <WrapperButtonMore
-      textButton={textButton}
+      textButton="Xem thêm"
       styleButton={{
         border: '1px solid rgb(11,116,229)',
         color: 'rgb(11,116,229)',

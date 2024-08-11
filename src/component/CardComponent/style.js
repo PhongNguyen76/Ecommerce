@@ -2,6 +2,8 @@ import { Card } from 'antd';
 import styled from 'styled-components';
 export const WrapperCardStyle = styled(Card)`
   width: 200px;
+  margin:8px;
+position:relative
   & img {
     height: 200px;
   }
